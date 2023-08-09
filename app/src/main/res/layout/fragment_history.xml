@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDFD"
+    tools:context=".History.History">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/pink"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Bil History"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <SearchView
+        android:id="@+id/history_searchView"
+        android:layout_width="389dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/history_recycleView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/friend_search_view">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="196dp" />
+
+</RelativeLayout>

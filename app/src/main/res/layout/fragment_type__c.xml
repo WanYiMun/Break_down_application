@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_9"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home_pac.type_C">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <ImageButton
+            android:id="@+id/info_button"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageButton1"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="@color/pink"
+            android:src="@drawable/baseline_info_24" />
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="@color/pink"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="196dp"
+            android:layout_height="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginBottom="0dp"
+            android:text="Type C - Ratio"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="-1dp"
+            android:backgroundTint="@color/pink"
+            android:src="@drawable/baseline_check_24" />
+    </RelativeLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        app:columnCount="1"
+        app:rowCount="3">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="378dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:columnCount="2"
+                app:rowCount="5">
+
+                <TextView
+                    android:layout_width="306dp"
+                    android:layout_height="wrap_content"
+                    android:text="Details of bill"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_column="1"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Total"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="1"
+                    app:layout_rowWeight="1" />
+
+                <EditText
+                    android:id="@+id/detail_total"
+                    android:layout_width="302dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="@color/pink"
+                    android:inputType="numberDecimal" />
+
+
+                <TextView
+                    android:id="@+id/textView_15"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="Location"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/detail_location"
+                    android:layout_width="302dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="@color/pink"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="58dp"
+                    android:layout_height="32dp"
+                    android:text="Date"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/detail_date"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="#FFFFFF"
+                    android:hint="01 / 01 / 2023"
+                    android:padding="15dp"
+                    android:textColor="@color/pink"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="376dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="1"
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Individual"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_me"
+                    android:layout_width="395dp"
+                    android:layout_height="46dp"
+                    android:layout_below="@+id/textView20"
+                    android:text="Include me " />
+
+                <TableLayout
+                    android:id="@+id/table_layout_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp">
+
+                </TableLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="233dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_below="@+id/relative_1"
+                android:orientation="vertical">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/relative_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="94dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:onClick="addRow"
+                        android:text="Add"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Friend"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="363dp"
+                    android:layout_height="153dp"
+                    android:fillViewport="true">
+
+                    <TableLayout
+                        android:id="@+id/table_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="93dp" />
+                    </TableLayout>
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</LinearLayout>
+</ScrollView>
+
+

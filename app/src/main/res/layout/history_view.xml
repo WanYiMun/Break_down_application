@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:text="Date :"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/history_date"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-1dp"
+        android:textColor="@color/black"
+        tools:text="1/1/2023" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView12"
+        android:text="Location :"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/history_location"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/history_date"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-9dp"
+        android:textColor="@color/black"
+        tools:text="xxxx" />
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView13"
+        android:text="Total : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/history_total"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/history_location"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="1dp"
+        android:textColor="@color/black"
+        tools:text="RM 99.99" />
+
+    <TextView
+        android:id="@+id/textView_15"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView14"
+        android:text="Friend Name  : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/history_people"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/history_total"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="1dp"
+        android:textColor="@color/black"
+        tools:text="Person A , Person B , Person C" />
+
+    <TextView
+        android:id="@+id/textView_16"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_15"
+        android:text="Friend Price  : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/history_price"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/history_people"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="0dp"
+        android:textColor="@color/black"
+        tools:text="Price A , Price B , Price C" />
+
+    <TextView
+        android:id="@+id/textView_17"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_16"
+        android:text="My Price  : "
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/history_me"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/history_price"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="1dp"
+        android:textColor="@color/black"
+        tools:text="Price A " />
+
+
+</RelativeLayout>
